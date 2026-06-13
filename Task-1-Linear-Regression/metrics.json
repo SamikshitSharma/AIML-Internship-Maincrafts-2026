@@ -1,0 +1,12 @@
+{
+  "samples": 20640,
+  "features": 8,
+  "train_samples": 16512,
+  "test_samples": 4128,
+  "mae": 0.5332,
+  "rmse": 0.7456,
+  "r2": 0.5758,
+  "intercept": -37.0233,
+  "strongest_positive_correlation": "MedInc",
+  "notebook": "task1_ml_linear_regression.ipynb"
+}
