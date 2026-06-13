@@ -1,0 +1,51 @@
+﻿# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and local config
+.env
+.env.*
+*.local
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data and generated model artifacts
+*.pkl
+*.pickle
+*.joblib
+models/
+outputs/
+reports/generated/
+
+# Logs
+*.log
