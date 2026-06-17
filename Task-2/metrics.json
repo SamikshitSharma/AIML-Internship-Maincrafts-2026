@@ -1,0 +1,57 @@
+{
+  "project_title": "Feature Engineering, Model Optimization & Performance Comparison",
+  "dataset": "California Housing dataset from sklearn.datasets.fetch_california_housing(as_frame=True)",
+  "target_variable": "HousePrice",
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "row_count": 20640,
+  "column_count": 9,
+  "missing_values": {
+    "MedInc": 0,
+    "HouseAge": 0,
+    "AveRooms": 0,
+    "AveBedrms": 0,
+    "Population": 0,
+    "AveOccup": 0,
+    "Latitude": 0,
+    "Longitude": 0,
+    "HousePrice": 0
+  },
+  "train_size": 16512,
+  "test_size": 4128,
+  "test_size_ratio": 0.2,
+  "random_state": 42,
+  "scaler": "StandardScaler",
+  "models": [
+    {
+      "Model": "Decision Tree Regressor",
+      "RMSE": 0.7242338143386247,
+      "R2 Score": 0.5997321244428706
+    },
+    {
+      "Model": "Ridge Regression",
+      "RMSE": 0.7455542909384612,
+      "R2 Score": 0.5758185345441319
+    },
+    {
+      "Model": "Linear Regression",
+      "RMSE": 0.7455813830127764,
+      "R2 Score": 0.5757877060324508
+    }
+  ],
+  "best_model": "Decision Tree Regressor",
+  "best_model_metrics": {
+    "Model": "Decision Tree Regressor",
+    "RMSE": 0.7242338143386247,
+    "R2 Score": 0.5997321244428706
+  },
+  "selection_rule": "Highest R2 Score; if tied, lowest RMSE"
+}
