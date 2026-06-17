@@ -4,18 +4,18 @@ A professional machine learning portfolio repository for the 4-week Artificial I
 
 ## Internship Overview
 
-This repository contains all internship tasks, experiments, notebooks, reports, and supporting assets completed during the Maincrafts Technology AIML Internship. It is structured to support clean development, reproducible analysis, and long-term portfolio presentation.
+This repository contains all internship tasks, experiments, notebooks, reports, models, and supporting assets completed during the Maincrafts Technology AIML Internship. It is structured to support clean development, reproducible analysis, technical reporting, and long-term portfolio presentation.
 
 ## About Maincrafts Technology AIML Internship
 
-The internship focuses on applying core artificial intelligence and machine learning concepts through practical, task-based projects. Each task is designed to strengthen the complete machine learning workflow: problem understanding, data loading, exploratory analysis, preprocessing, model training, evaluation, documentation, and reporting.
+The internship focuses on applying core artificial intelligence and machine learning concepts through practical, task-based projects. Each task strengthens the complete machine learning workflow: problem understanding, data loading, exploratory analysis, preprocessing, model training, evaluation, documentation, reporting, and GitHub-based portfolio maintenance.
 
 ## Repository Objectives
 
 - Maintain a professional record of all internship work.
 - Organize each task in a dedicated, reproducible project folder.
 - Demonstrate practical machine learning skills using Python and common data science libraries.
-- Provide readable notebooks, reports, saved artifacts, and documentation suitable for GitHub, LinkedIn, resumes, and interviews.
+- Provide readable notebooks, reports, saved artifacts, metrics, and documentation suitable for GitHub, LinkedIn, resumes, and interviews.
 - Build a scalable structure that can grow across the full internship duration.
 
 ## Technologies Used
@@ -27,7 +27,39 @@ The internship focuses on applying core artificial intelligence and machine lear
 - scikit-learn
 - Matplotlib
 - Seaborn
+- Joblib
 - Git and GitHub
+
+## Current Progress
+
+| Task | Project | Status |
+| --- | --- | --- |
+| Task 1 | Linear Regression House Price Predictor | Completed |
+| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed |
+| Task 3 | Pending | Pending |
+| Task 4 | Pending | Pending |
+
+## Task 2 Summary
+
+Task 2 builds an enhanced California Housing prediction workflow with feature scaling, multiple regression models, model comparison, best-model selection, visualizations, a saved model artifact, and a professional PDF report.
+
+### Models Evaluated
+
+- Linear Regression
+- Ridge Regression
+- Decision Tree Regressor
+
+### Results
+
+| Model | RMSE | R2 Score |
+| --- | ---: | ---: |
+| Decision Tree Regressor | 0.7242 | 0.5997 |
+| Ridge Regression | 0.7456 | 0.5758 |
+| Linear Regression | 0.7456 | 0.5758 |
+
+### Selected Best Model
+
+Decision Tree Regressor
 
 ## Repository Structure
 
@@ -38,9 +70,23 @@ AIML-Internship-Maincrafts-2026/
 ├── .gitignore
 ├── requirements.txt
 ├── Task-1-Linear-Regression/
-│   └── README.md
-├── Task-2/
-│   └── README.md
+│   ├── AI_ML_Task1_Linear_Regression.ipynb
+│   ├── report.pdf
+│   ├── README.md
+│   └── ...
+├── Task-2-Feature-Engineering-Model-Optimization/
+│   ├── AI_ML_Task2_Model_Comparison.ipynb
+│   ├── report.pdf
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── best_model.joblib
+│   ├── metrics.json
+│   ├── model_comparison.csv
+│   ├── sample_predictions.csv
+│   ├── generate_notebook.py
+│   ├── generate_report.py
+│   ├── task2_pipeline.py
+│   └── plots/
 ├── Task-3/
 │   └── README.md
 ├── Task-4/
@@ -51,19 +97,19 @@ AIML-Internship-Maincrafts-2026/
 
 ## Task Tracking
 
-| Task | Topic | Status | Deliverables |
+| Task | Topic | Status | Key Deliverables |
 | --- | --- | --- | --- |
-| Task 1 | Linear Regression House Price Predictor | Ready for development | Notebook, report, optional model artifact |
-| Task 2 | To be announced | Pending | To be added |
-| Task 3 | To be announced | Pending | To be added |
-| Task 4 | To be announced | Pending | To be added |
+| Task 1 | Linear Regression House Price Predictor | Completed | Notebook, report, README, reproducible regression workflow |
+| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed | Notebook, report, saved model, metrics, comparison CSV, sample predictions, plots |
+| Task 3 | Pending | Pending | To be added |
+| Task 4 | Pending | Pending | To be added |
 
 ## Future Scope
 
 Planned improvements across the internship include:
 
-- Add well-documented notebooks for each task.
-- Include model evaluation reports and visualizations.
+- Add well-documented notebooks for each remaining task.
+- Include model evaluation reports and visualizations for each project.
 - Save reusable models and prediction scripts where appropriate.
 - Add project-specific datasets or dataset access instructions.
 - Expand documentation with setup steps, results, and learning outcomes.
