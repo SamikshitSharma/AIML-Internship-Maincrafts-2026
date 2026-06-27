@@ -98,7 +98,7 @@ The selected final model is the **Tuned Decision Tree**. It was selected because
 ## Repository Structure
 
 ```text
-Task-3/
+Task-3-Model-Validation-Overfitting-Control-and-Hyperparameter-Tuning/
 ├── AI_ML_Task3_Model_Validation_Tuning.ipynb
 ├── report.pdf
 ├── README.md
@@ -154,3 +154,4 @@ python generate_report.py
 - Add nested cross-validation for more conservative model-selection estimates.
 - Compare ensemble models such as Random Forest and Gradient Boosting.
 - Add residual plots and prediction interval analysis.
+

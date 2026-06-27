@@ -138,7 +138,7 @@ AIML-Internship-Maincrafts-2026/
 │   ├── generate_report.py
 │   ├── task2_pipeline.py
 │   └── plots/
-├── Task-3/
+├── Task-3-Model-Validation-Overfitting-Control-and-Hyperparameter-Tuning/
 │   ├── AI_ML_Task3_Model_Validation_Tuning.ipynb
 │   ├── report.pdf
 │   ├── README.md
@@ -186,3 +186,4 @@ Planned improvements across the internship include:
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
