@@ -30,14 +30,14 @@ The internship focuses on applying core artificial intelligence and machine lear
 - Joblib
 - Git and GitHub
 
-## Current Progress
+## Internship Progress
 
-| Task | Project | Status |
+| Task | Title | Status |
 | --- | --- | --- |
-| Task 1 | Linear Regression House Price Predictor | Completed |
-| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed |
-| Task 3 | Model Validation, Overfitting Control & Hyperparameter Tuning | Completed |
-| Task 4 | Pending | Pending |
+| Task 1 | Linear Regression House Price Predictor | Completed ✅ |
+| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed ✅ |
+| Task 3 | Model Validation, Overfitting Control & Hyperparameter Tuning | Completed ✅ |
+| Task 4 | Pending Assignment | Pending ⏳ |
 
 ## Task 2 Summary
 
@@ -61,10 +61,34 @@ Task 2 builds an enhanced California Housing prediction workflow with feature sc
 
 Decision Tree Regressor
 
-
 ## Task 3 Summary
 
-Task 3 enhances the California Housing prediction workflow with overfitting detection, 5-fold cross-validation, GridSearchCV hyperparameter tuning, optimized Decision Tree evaluation, saved model artifacts, visualizations, and a professional PDF report.
+Task 3 adds a professional validation and tuning workflow to the California Housing prediction project. It focuses on identifying model generalization issues, improving Decision Tree performance through cross-validation and GridSearchCV, and selecting the final model using objective evaluation metrics.
+
+### Objective
+
+- Detect overfitting
+- Perform cross-validation
+- Apply GridSearchCV
+- Optimize model performance
+- Select the final model scientifically
+
+### Concepts Covered
+
+- Cross Validation
+- GridSearchCV
+- Hyperparameter Tuning
+- Overfitting Detection
+- Model Optimization
+
+### Deliverables
+
+- Jupyter Notebook
+- PDF Report
+- Optimized Model
+- Cross Validation Results
+- Hyperparameter Results
+- Visualizations
 
 ### Validation and Tuning Results
 
@@ -78,6 +102,7 @@ Task 3 enhances the California Housing prediction workflow with overfitting dete
 ### Selected Best Model
 
 Tuned Decision Tree with `max_depth=10` and `min_samples_split=10`.
+
 ## Repository Structure
 
 ```text
@@ -86,11 +111,20 @@ AIML-Internship-Maincrafts-2026/
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt
+├── assets/
+│   └── README.md
 ├── Task-1-Linear-Regression/
-│   ├── AI_ML_Task1_Linear_Regression.ipynb
+│   ├── task1_ml_linear_regression.ipynb
 │   ├── report.pdf
 │   ├── README.md
-│   └── ...
+│   ├── requirements.txt
+│   ├── house_model.pkl
+│   ├── metrics.json
+│   ├── model_coefficients.csv
+│   ├── sample_predictions.csv
+│   ├── generate_notebook.py
+│   ├── generate_report.py
+│   └── plots/
 ├── Task-2-Feature-Engineering-Model-Optimization/
 │   ├── AI_ML_Task2_Model_Comparison.ipynb
 │   ├── report.pdf
@@ -119,9 +153,7 @@ AIML-Internship-Maincrafts-2026/
 │   ├── generate_report.py
 │   ├── task3_pipeline.py
 │   └── plots/
-├── Task-4/
-│   └── README.md
-└── assets/
+└── Task-4/
     └── README.md
 ```
 
@@ -129,10 +161,10 @@ AIML-Internship-Maincrafts-2026/
 
 | Task | Topic | Status | Key Deliverables |
 | --- | --- | --- | --- |
-| Task 1 | Linear Regression House Price Predictor | Completed | Notebook, report, README, reproducible regression workflow |
-| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed | Notebook, report, saved model, metrics, comparison CSV, sample predictions, plots |
-| Task 3 | Model Validation, Overfitting Control & Hyperparameter Tuning | Completed | Notebook, report, tuned model, metrics, CV results, hyperparameter results, comparison CSV, plots |
-| Task 4 | Pending | Pending | To be added |
+| Task 1 | Linear Regression House Price Predictor | Completed ✅ | Notebook, report, README, trained model, metrics, predictions, plots |
+| Task 2 | Feature Engineering, Model Optimization & Performance Comparison | Completed ✅ | Notebook, report, saved model, metrics, comparison CSV, sample predictions, plots |
+| Task 3 | Model Validation, Overfitting Control & Hyperparameter Tuning | Completed ✅ | Notebook, report, optimized model, cross-validation results, hyperparameter results, visualizations |
+| Task 4 | Pending Assignment | Pending ⏳ | To be added |
 
 ## Future Scope
 
@@ -154,5 +186,3 @@ Planned improvements across the internship include:
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-
