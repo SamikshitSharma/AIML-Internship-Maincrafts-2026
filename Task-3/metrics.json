@@ -1,0 +1,141 @@
+{
+  "project_title": "Model Validation, Overfitting Control & Hyperparameter Tuning",
+  "dataset": "California Housing dataset from sklearn.datasets.fetch_california_housing(as_frame=True)",
+  "target_variable": "HousePrice",
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "row_count": 20640,
+  "column_count": 9,
+  "missing_values": {
+    "MedInc": 0,
+    "HouseAge": 0,
+    "AveRooms": 0,
+    "AveBedrms": 0,
+    "Population": 0,
+    "AveOccup": 0,
+    "Latitude": 0,
+    "Longitude": 0,
+    "HousePrice": 0
+  },
+  "train_size": 16512,
+  "test_size": 4128,
+  "test_size_ratio": 0.2,
+  "random_state": 42,
+  "scaler": "StandardScaler",
+  "baseline_models": [
+    {
+      "Model": "Linear Regression",
+      "RMSE": 0.7455813830127764,
+      "R2 Score": 0.5757877060324508,
+      "Model Type": "Baseline"
+    },
+    {
+      "Model": "Ridge Regression",
+      "RMSE": 0.7455542909384612,
+      "R2 Score": 0.5758185345441319,
+      "Model Type": "Baseline"
+    },
+    {
+      "Model": "Original Decision Tree",
+      "RMSE": 0.7242338143386247,
+      "R2 Score": 0.5997321244428706,
+      "Model Type": "Baseline"
+    }
+  ],
+  "overfitting_analysis": {
+    "model": "Original Decision Tree",
+    "train_rmse": 0.6959477541460324,
+    "test_rmse": 0.7242338143386247,
+    "rmse_gap": 0.028286060192592277
+  },
+  "cross_validation": {
+    "model": "Original Decision Tree",
+    "cv": 5,
+    "fold_rmse": [
+      0.8508950009345633,
+      0.7456722244641456,
+      0.7557974758805104,
+      0.8934789608336859,
+      0.824427170216381
+    ],
+    "mean_rmse": 0.8140541664658573,
+    "std_rmse": 0.056290454326489756
+  },
+  "grid_search": {
+    "model": "DecisionTreeRegressor",
+    "param_grid": {
+      "max_depth": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "min_samples_split": [
+        2,
+        5,
+        10
+      ]
+    },
+    "cv": 5,
+    "scoring": "neg_root_mean_squared_error",
+    "best_params": {
+      "max_depth": 10,
+      "min_samples_split": 10
+    },
+    "best_cv_rmse": 0.6366408923917068
+  },
+  "models": [
+    {
+      "Rank": 1,
+      "Model": "Tuned Decision Tree",
+      "RMSE": 0.6454300828015771,
+      "R2 Score": 0.6820992539714815,
+      "Model Type": "Optimized"
+    },
+    {
+      "Rank": 2,
+      "Model": "Original Decision Tree",
+      "RMSE": 0.7242338143386247,
+      "R2 Score": 0.5997321244428706,
+      "Model Type": "Baseline"
+    },
+    {
+      "Rank": 3,
+      "Model": "Ridge Regression",
+      "RMSE": 0.7455542909384612,
+      "R2 Score": 0.5758185345441319,
+      "Model Type": "Baseline"
+    },
+    {
+      "Rank": 4,
+      "Model": "Linear Regression",
+      "RMSE": 0.7455813830127764,
+      "R2 Score": 0.5757877060324508,
+      "Model Type": "Baseline"
+    }
+  ],
+  "best_model": "Tuned Decision Tree",
+  "best_model_metrics": {
+    "Rank": 1,
+    "Model": "Tuned Decision Tree",
+    "RMSE": 0.6454300828015771,
+    "R2 Score": 0.6820992539714815,
+    "Model Type": "Optimized"
+  },
+  "selection_rule": "Highest R2 Score; if tied, lowest RMSE",
+  "reloaded_model_prediction_sample": [
+    0.5523009677419356,
+    0.7265511811023622,
+    4.968580000000001,
+    2.2540468750000002,
+    2.0455147058823524
+  ]
+}
